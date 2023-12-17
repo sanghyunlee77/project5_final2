@@ -95,4 +95,11 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <repository>
+      <id>SangHyunLee</id>
+      <url>https://github.com/sanghyunlee77/project5_final2.git</url>
+    </repository>
+  </distributionManagement>
+
 </project>
