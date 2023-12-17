@@ -82,7 +82,7 @@
 <script>
     function viewDetail(seq) {
         var contextPath = '${pageContext.request.contextPath}';
-        location.href = contextPath + '/pet/list/' + seq;
+        location.href = contextPath + '/pet/view/' + seq;
     }
     function delete_ok(seq){
         var contextPath = '${pageContext.request.contextPath}';
