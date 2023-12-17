@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PetController {
     @Autowired
     PetService petService;
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String home() {
+        return "home";
+    }
+
     @RequestMapping(value = "/pet/list",method = RequestMethod.GET)
     public String petlist(Model model){
         model.addAttribute("list",petService.getPetList());
@@ -58,6 +63,11 @@ public class PetController {
             return "redirect:../list";
         }
     }
-
+    @RequestMapping(value = "/pet/view/{seq}",method = RequestMethod.GET)
+    public String viewpost(@PathVariable("seq")int seq, Model model){
+        PetVO petVO = petService.getPet(seq);
+        model.addAttribute("u",petVO);
+        return "view";
+    }
 
 }
