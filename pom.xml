@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>project5-1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
   <dependencies>
     <!-- JUnit -->
     <dependency>
@@ -22,10 +23,12 @@
       <artifactId>spring-webmvc</artifactId>
       <version>4.2.4.RELEASE</version>
     </dependency>
+
+    <!-- Servlet API -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version> <!-- 최신 버전으로 업데이트 가능 -->
+      <version>3.1.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -57,13 +60,6 @@
       <version>4.2.4.RELEASE</version>
     </dependency>
 
-    <!-- MySQL Connector Java -->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.23</version>
-    </dependency>
-
     <!-- MyBatis -->
     <dependency>
       <groupId>org.mybatis</groupId>
@@ -79,27 +75,31 @@
     </dependency>
   </dependencies>
 
-  <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-
-
   <build>
     <finalName>project5-1</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
         <configuration>
           <source>8</source>
           <target>8</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
     </plugins>
   </build>
-  <distributionManagement>
-    <repository>
-      <id>SangHyunLee</id>
-      <url>https://github.com/sanghyunlee77/project5_final2.git</url>
-    </repository>
-  </distributionManagement>
 
+  <!-- 원격 저장소 설정 (필요한 경우) -->
+  <!-- <distributionManagement>
+      <repository>
+          <id>repository-id</id>
+          <url>repository-url</url>
+      </repository>
+  </distributionManagement> -->
 </project>
