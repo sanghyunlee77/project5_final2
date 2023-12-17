@@ -9,8 +9,27 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-link {
+            display: inline-block;
+            padding: 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-<p><a href="board/list">리스트이동</a></p>
+<p><a href="pet/list" class="login-link">로그인하러 이동</a></p>
 </body>
 </html>
