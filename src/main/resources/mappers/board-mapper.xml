@@ -8,9 +8,10 @@
     </insert>
     <update id="updatePet">
         update PETDATA
-        set mname=#{mname}, pname=#{pname}, kind=#{kind}, pnumber=#{pnumber}, comeday=#{comeday}, byeday =#{byeday}, contents#{contents}
+        set mname=#{mname}, pname=#{pname}, kind=#{kind}, pnumber=#{pnumber}, comeday=#{comeday}, byeday=#{byeday}, contents=#{contents}
         where seq=#{seq}
     </update>
+
     <delete id="deletePet">
         delete from PETDATA where seq=#{seq}
     </delete>
