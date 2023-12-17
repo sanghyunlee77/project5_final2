@@ -9,14 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c12bc3-b962-4de1-9df8-a1b42eb65edb" name="Changes" comment="저장 완성">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.jsp" afterDir="false" />
+    <list default="true" id="b5c12bc3-b962-4de1-9df8-a1b42eb65edb" name="Changes" comment="수정 오류 해결">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/user/LoginCheckInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pet/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pet/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/board-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/board-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editpost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/user/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/user/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/img.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,11 +110,11 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
       <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/resources/mappers" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.pet" />
@@ -248,7 +251,7 @@
       <workItem from="1702465122108" duration="4352000" />
       <workItem from="1702619132975" duration="4634000" />
       <workItem from="1702623953515" duration="2564000" />
-      <workItem from="1702733206243" duration="5678000" />
+      <workItem from="1702733206243" duration="12587000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <option name="closed" value="true" />
@@ -298,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702739894431</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="수정 오류 해결">
+      <option name="closed" value="true" />
+      <created>1702801527077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702801527077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +331,8 @@
     <MESSAGE value="commit2" />
     <MESSAGE value="pet연결" />
     <MESSAGE value="저장 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="저장 완성" />
+    <MESSAGE value="수정 오류 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정 오류 해결" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

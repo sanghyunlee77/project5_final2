@@ -1,66 +1,19 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>로그인 페이지</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .login-container {
-            width: 300px;
-            margin: auto;
-            margin-top: 100px;
-        }
-        .login-form {
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-        .form-group button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-    </style>
+    <meta charset="UTF-8"> <title>Insert title here</title> <style>
+    img, label { display:inline-block;}
+    label{ width:130px}
+    button{ background-color:blue; color:white;font-size:15px}
+</style>
 </head>
 <body>
-
-<div class="login-container">
-    <div class="login-form">
-        <h2>로그인</h2>
-        <form id="loginForm" action="loginOk">
-            <div class="form-group">
-                <label for="userId">아이디:</label>
-                <input type="text" id="userId" name="userId" required>
-            </div>
-            <div class="form-group">
-                <label for="password">비밀번호:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <button type="button">로그인</button>
-            </div>
-        </form>
-    </div>
+<div style='width:100%;text-align:center;padding-top:100px'>
+    <form method="post" action="loginOk">
+        <div><label>User ID: </label><input type='text' name='userid' /></div> <div><label>Password: </label>
+        <input type='password' name='password' /></div> <button type='submit'>login</button>
+    </form>
 </div>
-
-
-
-</body>
-</html>
+</body> </html>
+38
